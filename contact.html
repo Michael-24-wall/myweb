@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scrolling Image Carousel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .scrolling-images {
+      animation: scroll 20s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen">
+
+  <!-- Carousel Container -->
+  <div class="overflow-hidden w-full max-w-5xl">
+    <div class="flex space-x-8 scrolling-images">
+      <!-- Repeat or duplicate these images -->
+      <img src="https://via.placeholder.com/150x100?text=1" alt="Image 1" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=2" alt="Image 2" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=3" alt="Image 3" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=4" alt="Image 4" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=5" alt="Image 5" class="rounded-lg shadow-lg">
+
+      <!-- Duplicate to create a seamless loop -->
+      <img src="https://via.placeholder.com/150x100?text=1" alt="Image 1" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=2" alt="Image 2" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=3" alt="Image 3" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=4" alt="Image 4" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/150x100?text=5" alt="Image 5" class="rounded-lg shadow-lg">
+    </div>
+  </div>
+
+</body>
+</html>

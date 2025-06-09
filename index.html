@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      <img src="Fictional logo for Wallace Corporation from….jpeg" alt="">
+      TOGETHER WE RICE <br> WALLANCE ORGANIZATION
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <header class="flex items-center justify-between p-4 bg-gray-800">
+      <!-- Insert Logo Here -->
+      <div>
+        <!-- Paste your animated logo HTML here (e.g., from previous step) -->
+        <img
+          src="Fictional logo for Wallace Corporation from….jpeg"
+          alt="Shalom House Logo"
+          class="w-20 h-20"
+        />
+        MY LOGO
+      </div>
+
+      <!-- Navigation or other content -->
+      <nav class="text-white space-x-4">
+        <a href="#" class="hover:text-blue-400">Home</a>
+        <a href="#" class="hover:text-blue-400">About</a>
+      </nav>
+    </header>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+
+      #menu-toggle:checked + label + div#menu-links {
+        display: flex;
+      }
+
+      .nav-link-active {
+        border-bottom-width: 2px;
+        border-bottom-color: #3b82f6;
+        color: #3b82f6;
+      }
+
+      .hero-bg {
+        background-image: linear-gradient(
+          to right,
+          rgba(59, 130, 246, 0.8),
+          rgba(37, 99, 235, 0.9)
+        );
+      }
+
+      .text-lightblue {
+        color: #fcfcfc;
+      }
+
+      .img {
+        width: 6%;
+        height: 10px;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      .scrolling-images {
+        animation: scroll 20s linear infinite;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body class="flex flex-col min-h-screan bg-grey-100 text-grey-800">
+    <nav class="bg-white shadow-md sticky top-0 w-full z-20">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-2xl font-bold text-blue-600"
+          >TOGETHER WE RISE <br />
+          WALLANCE ORGANIZATION</a
+        >
+        <input type="checkbox" id="menu-toggle" class="peer" />
+        <label
+          for="menu-toggle"
+          class="md:hidden cursor-pointer p-2 rounded-md hover:bg-grey-100"
+        >
+          <svg
+            class="w-6 h-6 text-grey-700"
+            fill="none"
+            stroke-linejoin="round"
+            stroke-lineup="round"
+            strok-width="2"
+            vieBox=""
+          >
+            <path d="M4 6h16M4 12h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+        <div
+          id="menu-links"
+          class="hidden w-full bg-white shadow-md py-2 flex-col md:static md:flex md:auto md:shadow-none md:bg-transparent md:py-0 md:flex-row md:items-center md:space-x-4"
+        >
+          <a
+            href="index.html"
+            class="block w-full text-center md:w-auto text-grey-600 hover:text-blue-600 px-3 md:py2 text-sm font-mediam nav-link nav-link-active"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="block w-full text-center md:w-auto text-grey-600 hover:text-blue-600 px-3 md:py2 text-sm font-mediam nav-link"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            class="block w-full text-center md:w-auto text-grey-600 hover:text-blue-600 px-3 md:py2 text-sm font-mediam nav-link"
+            >About Us</a
+          >
+          <a
+            href="contact.html"
+            class="block w-full text-center md:w-auto text-grey-600 hover:text-blue-600 px-3 md:py2 text-sm font-mediam nav-link"
+            >Contacts</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow">
+      <section id="home-hero" class="hero-bg text-lightblue">
+        <div class="classcontainer mx-auto px-6 py-20 md:py-32 text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Innovate. Transform. Succeed.
+          </h1>
+          <p class="text-grey-600 mb-10 max-w-xl mx-auto">
+            hope you will enjoy our services
+          </p>
+          <a
+            href="services.html"
+            class="bg-white text-blue-600 font-bold px-8 py-3 rounded-ig duration-300"
+            >our solutions</a
+          >
+          <div class="img">
+            <img src="wall.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800">
+          Discover wallance organisation
+        </h2>
+        <p class="text-gray-600 mb-10 max-w-xl mx-auto">
+          We are passionate about crafting software that solves real-world
+          problems and drives business growth. Explore our services and learn
+          more about our commitment to innovation.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3>Our Services</h3>
+            <p class="text-gray-600 mb-4">
+              From web and mobile apps to cloud solutions and AI, find out how
+              we can help you.
+            </p>
+            <a
+              href="services.html"
+              class="text-blue-500 hover:text-blue-700 font-medium"
+              >Learn More &rarr;</a
+            >
+          </div>
+          <div class="bg-white bg-white p-8 rounded-lg shadow-lg">
+            <h3>About Our Team and Mission</h3>
+            <p class="text-gray-600 mb-4">
+              Meet the passionate innovators behind ZekeInnovate and understand
+              our mission.
+            </p>
+            <a
+              href="about.html"
+              class="text-green-500 hover:text-green-700 font-medium"
+              >Meet Us &rarr;</a
+            >
+          </div>
+          <div class="bg-white bg-white p-8 rounded-lg shadow-lg">
+            <h3>Contact Us</h3>
+            <p class="text-gray-600 mb-4">
+              Have a project in mind or a question? We're here to help.
+            </p>
+            <a
+              href="about.html"
+              class="text-green-500 hover:text-green-700 font-medium"
+              >Get in Touch &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray-900 flex items-center justify-center h-screen">
+        <!-- Carousel Container -->
+        <div class="overflow-hidden w-full max-w-5xl">
+          <div class="flex space-x-8 scrolling-images">
+            <!-- Repeat or duplicate these images -->
+            <img
+              src="wall.jpegll/150x100?text=1"
+              alt="Image 1"
+              class="rounded-lg shadow-lg"
+            />
+            <img src="wall.jpeg" alt="Image 2" class="rounded-lg shadow-lg" />
+            <img
+              src="https://via.placeholder.com/150x100?text=3"
+              alt="Image 3"
+              class="rounded-lg shadow-lg"
+            />
+            <img
+              src="https://via.placeholder.com/150x100?text=4"
+              alt="Image 4"
+              class="rounded-lg shadow-lg"
+            />
+            <img
+              src="https://via.placeholder.com/150x100?text=5"
+              alt="Image 5"
+              class="rounded-lg shadow-lg"
+            />
+
+            <!-- Duplicate to create a seamless loop -->
+            <img
+              src="https://via.placeholder.com/150x100?text=1"
+              alt="Image 1"
+              class="rounded-lg shadow-lg"
+            />
+            <img
+              src="https://via.placeholder.com/150x100?text=2"
+              alt="Image 2"
+              class="rounded-lg shadow-lg"
+            />
+            <img
+              src="https://via.placeholder.com/150x100?text=3"
+              alt="Image 3"
+              class="rounded-lg shadow-lg"
+            />
+            <img
+              src="https://via.placeholder.com/150x100?text=4"
+              alt="Image 4"
+              class="rounded-lg shadow-lg"
+            />
+            <img
+              src="https://via.placeholder.com/150x100?text=5"
+              alt="Image 5"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      <footer class="bg-gray-900 text-gray-300 px-6 py-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Email Subscription -->
+          <div>
+            <h2 class="text-lg font-semibold mb-2">Subscribe to our channel</h2>
+            <form class="flex flex-col sm:flex-row gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                type="submit"
+                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded text-white"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+          <!-- Important Links -->
+          <div>
+            <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="/privacy" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/terms" class="hover:underline">Terms of Service</a>
+              </li>
+              <li>
+                <a href="/cookie-policy" class="hover:underline"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact / Info -->
+          <div>
+            <h2 class="text-lg font-semibold mb-2">Contact Us</h2>
+            <p>
+              Email:
+              <a
+                href="mailto:support@example.com"
+                class="text-blue-400 hover:underline"
+                >support@ michaelwallance4@gmail.com</a
+              >
+            </p>
+            <p class="mt-4 text-sm text-gray-400">
+              &copy; 2025 together we rise wallance org. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
